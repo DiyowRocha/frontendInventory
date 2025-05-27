@@ -15,7 +15,34 @@
         <div id="menu"></div>
 
         <main>
-            <div id="form-department"></div>
+            <div class="content-1280 m-auto form-area">
+
+                <h2>Register Department</h2>
+
+                <form class="default-form flex-center-wrap m-auto" id="form-register-department">
+
+                <div class="default-itens-form">
+                    <label for="department">Department:</label>
+                    <input type="text" name="department" id="department" required>
+                </div>
+
+                <div class="default-itens-form">
+                    <label for="floor">Floor:</label>
+                    <input type="text" name="floor" id="floor" required>
+                </div>
+
+                <div class="default-itens-form">
+                    <label for="buildingId">Building:</label>
+                    <select name="buildingId" id="buildingId" required></select>
+                </div>
+
+                <div class="default-item-button flex-center">
+                    <button type="submit">Save Department</button>
+                </div>
+
+                </form>
+
+            </div>
         </main>
 
         <div id="footer"></div>
@@ -23,5 +50,6 @@
     </div>
 
     <script src="/assets/js/include-loaders.js"></script>
+    <script src="/assets/js/department/register-department.js"></script>
 </body>
 </html>

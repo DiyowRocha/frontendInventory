@@ -9,7 +9,6 @@ async function loadOptions(endpoint, selectId, placeholderText, textProperty = "
     if (!res.ok) throw new Error(`Failed to fetch ${endpoint}`);
     const data = await res.json();
 
-    // Limpa opções e adiciona placeholder
     select.innerHTML = `<option value="">${placeholderText}</option>`;
 
     data.forEach(item => {
@@ -25,37 +24,35 @@ async function loadOptions(endpoint, selectId, placeholderText, textProperty = "
 }
 
 async function initializeForm() {
-  await Promise.all([
-    loadOptions("manufacturer", "manufacturerId", "Select manufacturer"),
-    loadOptions("model", "modelId", "Select model"),
-    loadOptions("unit", "unitId", "Select unit"),
-    loadOptions("building", "buildingId", "Select building"),
-    loadOptions("department", "departmentId", "Select department")
-  ]);
+  await loadOptions("manufacturer", "manufacturerId", "Select manufacturer");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   initializeForm();
 
-  const form = document.getElementById("form-register-printer");
+  const form = document.getElementById("form-register-model");
   if (!form) return;
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const formData = {
-      serialNumber: form.serialNumber.value.trim(),
-      ipAddress: form.ipAddress.value.trim(),
-      printQueue: form.printQueue.value.trim(),
-      manufacturerId: parseInt(form.manufacturerId.value),
-      modelId: parseInt(form.modelId.value),
-      unitId: parseInt(form.unitId.value),
-      buildingId: parseInt(form.buildingId.value),
-      departmentId: parseInt(form.departmentId.value)
+      name: form.model.value.trim(),
+      manufacturerId: parseInt(form.manufacturerId.value)
     };
 
+    if (!formData.name) {
+      alert("Please enter the model name.");
+      return;
+    }
+
+    if (!formData.manufacturerId) {
+      alert("Please select a manufacturer.");
+      return;
+    }
+
     try {
-      const res = await fetch(`${apiUrl}/printer`, {
+      const res = await fetch(`${apiUrl}/model`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
@@ -63,10 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!res.ok) {
         const errorText = await res.text();
-        throw new Error(`Error saving printer: ${errorText}`);
+        throw new Error(`Error saving model: ${errorText}`);
       }
 
-      alert("Printer saved successfully!");
+      alert("Model saved successfully!");
       form.reset();
     } catch (error) {
       alert(error.message);
