@@ -1,0 +1,132 @@
+/*.color1 { background-color: #1b2987 }
+.color2 { background-color: #363ea0 }
+.color3 { background-color: #5254b9 }
+.color4 { background-color: #6d69d2 }
+.color5 { background-color: #887eeb }*/
+
+.content-1280{
+    width: 100%;
+    max-width: 1280px;
+}
+
+.content-1920{
+    width: 100%;
+    max-width: 1920px;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bcolor1 { border: 1px solid #1b2987 }
+.bcolor2 { border: 1px solid #363ea0 }
+.bcolor3 { border: 1px solid #5254b9 }
+.bcolor4 { border: 1px solid #6d69d2 }
+.bcolor5 { border: 1px solid #887eeb }
+.bred{ border: 1px solid red;}
+
+/*Default Form*/
+.form-area{
+    width: 55%;
+    min-width: 400px;
+    margin: 50px auto;
+    padding: 30px 0;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.form-area h2{
+    text-align: center;
+    color: #1b2987;
+    margin-bottom: 25px;
+}
+
+.default-form{
+    width: 70%;
+    min-width: 300px;
+}
+
+.default-itens-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 45%;
+    min-width: 30%;
+    margin: 0 15px;
+}
+
+.default-itens-form label,
+.default-itens-form input,
+.default-itens-form select{
+    width: 300px;
+    min-width: 280px;
+}
+
+.default-itens-form label{
+    margin-bottom: 5px;
+    color: #1b2987;
+    font-weight: bold;
+}
+
+.default-itens-form input,
+.default-itens-form select{
+    margin-bottom: 15px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #1b29877b;
+    padding: 0 10px;
+}
+
+.default-item-button{
+    width: 100%;
+}
+
+.default-form button{
+    width: 50%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1b2987;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.default-form button:hover{
+    background-color: #5254b9;
+}
