@@ -1,0 +1,46 @@
+main h1 {
+  text-align: center;
+  color: #1b2987;
+  margin-top: 3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+main p {
+  text-align: center;
+  color: #5254b9;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 3rem auto 5rem auto;
+  padding: 0 1rem;
+}
+
+.dashboard-card {
+  background-color: #6d69d2;
+  color: white;
+  padding: 1.8rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(105, 105, 210, 0.3);
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.dashboard-card:hover,
+.dashboard-card:focus {
+  background-color: #5254b9;
+  box-shadow: 0 8px 20px rgba(82, 84, 185, 0.5);
+  outline: none;
+  cursor: pointer;
+}

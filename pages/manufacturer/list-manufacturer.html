@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>List Manufacturers</title>
+  <link rel="stylesheet" href="/assets/css/default.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <div class="content-primal">
+
+    <div id="header"></div>
+    <div id="menu"></div>
+
+    <main>
+      <div class="content-1440 m-auto table-area">
+        <h2>List Manufacturers</h2>
+
+        <div class="flex-center search-area">
+          <input type="text" id="searchInput" placeholder="Search by name">
+        </div>
+
+        <div class="flex-center">
+          <table id="manufacturerTable" class="default-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Os dados serão carregados via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <div id="pagination" class="flex-center pagination"></div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+  </div>
+
+  <script src="/assets/js/include-loaders.js"></script>
+  <script src="/assets/js/manufacturer/list-manufacturer.js"></script>
+</body>
+</html>

@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Control Inventory System</title>
-    <link rel="stylesheet" href="/assets/css/default.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Control Inventory System</title>
+  <link rel="stylesheet" href="/assets/css/default.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/dashboard.css" />
 </head>
 <body>
+  <div class="content-primal">
+    <div id="header"></div>
+    <div id="menu"></div>
 
-    <div class="content-primal">
-        <div id="header"></div>
-        <div id="menu"></div>
+    <main>
+      <h1>Control Inventory System</h1>
+      <p>Escolha uma opção para começar:</p>
 
-        <main>
-            <!--Primary content-->
-        </main>
+      <div class="dashboard-grid">
+        <a href="/department/list-department.html" class="dashboard-card" tabindex="0">Departamentos</a>
+        <a href="/building/list-building.html" class="dashboard-card" tabindex="0">Prédios</a>
+        <a href="/unit/list-unit.html" class="dashboard-card" tabindex="0">Unidades</a>
+        <a href="/printer/list-printer.html" class="dashboard-card" tabindex="0">Impressoras</a>
+        <a href="/manufacturer/list-manufacturer.html" class="dashboard-card" tabindex="0">Fabricantes</a>
+        <a href="/model/list-model.html" class="dashboard-card" tabindex="0">Modelos</a>
+      </div>
+    </main>
 
-        <div id="footer"></div>
-    </div>    
-    
-    <script src="/assets/js/include-loaders.js"></script>
+    <div id="footer"></div>
+  </div>
 
+  <script src="/assets/js/include-loaders.js"></script>
 </body>
 </html>

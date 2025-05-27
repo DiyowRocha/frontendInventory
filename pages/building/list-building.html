@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>List Buildings</title>
+  <link rel="stylesheet" href="/assets/css/default.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <div class="content-primal">
+    <div id="header"></div>
+    <div id="menu"></div>
+
+    <main>
+      <div class="content-1440 m-auto table-area">
+        <h2>List Buildings</h2>
+
+        <div class="flex-center search-area">
+          <input type="text" id="searchInput" placeholder="Search by name or unit" />
+        </div>
+
+        <div class="flex-center">
+          <table id="buildingsTable" class="default-table">
+            <thead>
+              <tr>
+                <th>Building</th>
+                <th>Unit</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Dados serão carregados aqui -->
+            </tbody>
+          </table>
+        </div>
+
+        <div id="pagination" class="flex-center pagination"></div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+  </div>
+
+  <script src="/assets/js/include-loaders.js"></script>
+  <script src="/assets/js/building/list-building.js"></script>
+</body>
+</html>

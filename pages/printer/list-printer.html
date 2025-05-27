@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Printers</title>
-    <link rel="stylesheet" href="/assets/css/default.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>List Printers</title>
+  <link rel="stylesheet" href="/assets/css/default.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-
     <div class="content-primal">
 
         <div id="header"></div>
         <div id="menu"></div>
 
         <main>
-            
+            <div class="content-1440 m-auto table-area">
+                <h2>List Printers</h2>
+
+                <div class="flex-center search-area">
+                    <input type="text" id="searchInput" placeholder="Search by any field">
+                </div>
+
+                <div class="flex-center">
+                    <table id="printersTable" class="default-table">
+                        <thead>
+                            <tr>
+                                <th>Serial Number</th>
+                                <th>IP Address</th>
+                                <th>Print Queue</th>
+                                <th>Manufacturer</th>
+                                <th>Model</th>
+                                <th>Unit</th>
+                                <th>Building</th>
+                                <th>Department</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!---->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="pagination" class="flex-center pagination"></div>
+            </div>
         </main>
 
         <div id="footer"></div>
 
-    </div>
+  </div>
 
     <script src="/assets/js/include-loaders.js"></script>
+    <script src="/assets/js/printer/list-printer.js"></script>
 </body>
 </html>

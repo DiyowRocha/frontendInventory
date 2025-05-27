@@ -9,6 +9,11 @@
     max-width: 1280px;
 }
 
+.content-1440{
+    width: 100%;
+    max-width: 1440px;
+}
+
 .content-1920{
     width: 100%;
     max-width: 1920px;
@@ -129,4 +134,136 @@
 
 .default-form button:hover{
     background-color: #5254b9;
+}
+
+/*Default table*/
+.table-area {
+  margin: 50px auto;
+  padding: 40px;
+  max-width: 1200px;
+  border-radius: 16px;
+  background-color: #f9f9fc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.table-area h2 {
+  text-align: center;
+  color: #1b2987;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.search-area {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.search-area input {
+  width: 400px;
+  height: 38px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.search-area input:focus {
+  outline: none;
+  border-color: #1b2987;
+  box-shadow: 0 0 0 2px rgba(27, 41, 135, 0.2);
+}
+
+.default-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.default-table thead {
+  background-color: #1b2987;
+  color: #fff;
+}
+
+.default-table th,
+.default-table td {
+  padding: 14px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.default-table tbody tr:nth-child(odd) {
+  background-color: #f2f4fd;
+}
+
+.default-table tbody tr:hover {
+  background-color: #e4e8fb;
+}
+
+.default-table td.actions-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-edit,
+.btn-delete {
+  width: 80px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 14px;
+}
+
+/* Azul mais claro para Edit */
+.btn-edit {
+  background-color: #3a80f9;
+  margin-bottom: 5px;
+}
+
+.btn-edit:hover {
+  background-color: #2566d4;
+}
+
+/* Azul mais escuro para Delete */
+.btn-delete {
+  background-color: #1b2987;
+}
+
+.btn-delete:hover {
+  background-color: #121f65;
+}
+
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.pagination-btn {
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn.active,
+.pagination-btn:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
 }
